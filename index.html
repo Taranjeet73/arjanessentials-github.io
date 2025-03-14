@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #181818;
+        }
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+        }
+        .menu-list {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            background-color: #181818;
+            border: 1px solid #1DB954;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .menu-list a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 0;
+        }
+        .menu-list a:hover {
+            color: #1DB954;
+        }
+        .show-menu {
+            display: block;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 auto;
+        }
+        .search-bar input[type="text"] {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .search-bar button {
+            background-color: #1DB954;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #1ed760;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-list" id="menuList">
+            <a href="#home">Home</a>
+            <a href="#" id="aboutBtn">About</a>
+            <a href="#" id="contactBtn">Contact Us</a>
+
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search songs...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div id="home">
+        <h1>Welcome to Arjan Dhillon's Music Hub</h1>
+    </div>
+
+    <header> 
+        <h1><b>Arjan Essentials</b></h1>
+    </header>
+    <main>
+        <div class="music-container">
+            <div class="track">
+                <img src="https://i.scdn.co/image/ab67616d0000b273b18abd4e49623cf18347e8a1" alt="Kde Kde" class="cover">
+                <h2>Kde Kde</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://djpunjab.com.se/download/kde-kde-arjan-dhillon-mp3-song-download?q=320" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="track">
+                <img src="https://i1.sndcdn.com/artworks-zT7QW40zx1UtL5Qp-X4GLIw-t500x500.jpg" alt="Thode Vargia" class="cover">
+                <h2>Thode Vargia</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://p320.djpunjab.is/data/48/53973/302278/Thode%20Vargia%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+                <div class="track">
+                    <img src="https://i1.sndcdn.com/artworks-z3j5F9Gh5t6UyTDg-u0QA1Q-t500x500.jpg" alt="Song Cover" class="cover">
+                    <h2>Hurry up</h2>
+                    <p>Arjan dhillon</p>
+                    <audio controls>
+                        <source src="https://p320.djpunjab.is/data/320/52758/300814/Hurry%20Up%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+            </div>
+            <div class="track">
+                <img src="https://i.ytimg.com/vi/hGia1sD2lCI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLArO67DhVy-zv241aHNz60KW7F-Hw" alt="Thode Vargia" class="cover">
+                <h2>Glorious</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://p320.djpunjab.is/data/320/55028/303741/Glorious%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+             <div class="track">
+                <img src="https://i.ytimg.com/vi/LcJ_lEnVrF0/sddefault.jpg" alt="Likhari" class="cover">
+                <h2>Likhari</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://s320.djpunjab.is/data/320/49743/297325/Likhari%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div> <div class="track">
+                <img src="https://i.ytimg.com/vi/1y2qPjkDV-U/sddefault.jpg" alt="Begani raat" class="cover">
+                <h2>Begani Raat</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://s320.djpunjab.is/data/48/49793/297375/Beganiya%20Rattan%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="track">
+                <img src="https://lyricsnary.com/wp-content/uploads/2022/10/Fantasy-Song-Lyrics-.webp" alt="Fantasy" class="cover">
+                <h2>Fantasy</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://p320.djpunjab.is/data/320/52563/300598/Fantasy%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+             <div class="track">
+                <img src="https://i.ytimg.com/vi/n95Zcsv_b64/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLRpcqv-XkvT8SwwqM6RwVdvpfbQ" alt="Ballin" class="cover">
+                <h2>Ballin</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://p320.djpunjab.is/data/320/57017/306680/Ballin%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="track">
+                <img src="https://i.ytimg.com/vi/effQAfdEAl8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCa9Liz5QkYTBY84j0egyCWtunrA" alt="Fantasy" class="cover">
+                <h2>Ok Hoya Paya Haan</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://s320.djpunjab.is/data/320/56974/306620/Ok%20Hoye%20Paye%20Aa%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="track">
+                <img src="https://i.ytimg.com/vi/MkaLMypcVpw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCw5Q1y3A1t9XjxwvUqAQxvuwZFqw" alt="Fantasy" class="cover">
+                <h2>Setting</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://pagalnew.com/128-download/26110" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="track">
+                <img src="https://i.ytimg.com/vi/JW16gZVdjns/sddefault.jpg?v=67d016e3" alt="petrol" class="cover">
+                <h2>Petrol</h2>
+                <p>Arjan Dhillon</p>
+                <audio controls>
+                    <source src="https://p320.djpunjab.is/data/320/57017/306681/Petrol%20-%20Arjan%20Dhillon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menuList = document.getElementById('menuList');
+            menuList.classList.toggle('show-menu');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
